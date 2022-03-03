@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import '../dist/Iconary-react-component.min.css';
 import { Thing } from '../.';
-import {Alarm, Bill} from '../src/map'
+import {Alarm, Bill,ACane} from '../src/map'
 import { IconProps } from '../src/svgConfig';
 
 const props:IconProps = {
@@ -23,6 +23,7 @@ const App = () => {
       strokeLinecap={props.strokeLinecap} strokeLinejoin={props.strokeLinejoin}
       fill={props.fill}/>
       <Alarm  fill={props.fill} />
+      <ACane  fill={props.fill} />
     </div>
   );
 };
