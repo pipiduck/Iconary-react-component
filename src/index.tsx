@@ -1,4 +1,5 @@
 import * as React from 'react';
+export * from './map';
 import './index.less';
 
 // Delete me
