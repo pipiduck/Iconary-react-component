@@ -35,3 +35,4 @@ export default IconWrapper((props: ISvgIconProps) => (
     />
   </svg>
 ));
+

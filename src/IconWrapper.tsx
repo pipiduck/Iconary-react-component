@@ -36,6 +36,7 @@ export function convert(theme: Theme,fill:string | string[]) {
 }
 
 export function IconWrapper(render: IconRender) {
+
   return (props: IconProps) => {
 
     const size = props.size || '2em';
@@ -54,6 +55,8 @@ export function IconWrapper(render: IconRender) {
       strokeLinejoin,
       colors
     };
+
     return <span>{render(svgProps)}</span>;
+    
   };
 }
