@@ -23,19 +23,19 @@
 ## Install
 
 ```sh
-yarn install
+npm install iconary-react-component
 ```
 
 ## Usage
 
 ```sh
-yarn run start
-```
+//引入图标
+import {Alarm} from 'iconary-react-component'
+//引入图标css
+import 'iconary-react-component/dist/Iconary-react-component.min.css'
+//使用图标组件
+<Alarm theme="outline" size="41" fill={['#333' ,'#becff5' ,'#FFF' ,'#fcc3c3']} strokeWidth={3} strokeLinejoin="bevel" strokeLinecap="square"/>
 
-## Run tests
-
-```sh
-yarn run test
 ```
 
 ## Author
