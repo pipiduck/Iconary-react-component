@@ -6,6 +6,7 @@ export type StrokeLinecap = 'butt' | 'round' | 'square';
 
 // svg配置属性
 export interface ISvgIconProps {
+  id: number | string;
   // 图标尺寸大小，默认1em
   size: number | string;
   // 描边宽度
@@ -23,6 +24,8 @@ export type Theme = 'outline' | 'filled' | 'two-tone' | 'multi-color';
 
 // svg组件传入属性
 export interface IconProps {
+
+    id?: number | string;
 
     // 图标尺寸大小，默认1em
     size?: number | string;

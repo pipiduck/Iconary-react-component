@@ -38,17 +38,18 @@ export function convert(theme: Theme,fill:string | string[]) {
 export function IconWrapper(render: IconRender) {
 
   return (props: IconProps) => {
-
     const size = props.size || '2em';
     const strokeWidth = props.strokeWidth || 4;
     const strokeLinecap = props.strokeLinecap || 'round';
     const strokeLinejoin = props.strokeLinejoin || 'round';
     const theme = props.theme || 'outline';
     const fill = props.fill || ['#111'];
+    const id = props.id || ' ';
 
     let colors = convert(theme,fill);
 
     const svgProps = {
+      id,
       size,
       strokeWidth,
       strokeLinecap,
@@ -57,6 +58,6 @@ export function IconWrapper(render: IconRender) {
     };
 
     return <span>{render(svgProps)}</span>;
-    
+
   };
 }
